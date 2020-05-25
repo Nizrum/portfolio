@@ -353,6 +353,9 @@ body {
   .site__image img {
     height: 205px;
   }
+  .site:hover .site__hover {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
