@@ -14,6 +14,8 @@
 
 body {
     font-family: 'Raleway-Regular', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -178,6 +180,8 @@ body {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         align-items: center;
+        text-decoration: none;
+        color: #000;
     }
 }
 
