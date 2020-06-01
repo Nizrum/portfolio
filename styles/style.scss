@@ -63,6 +63,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover {
+            border: 2px solid #C161EE;
+        }
     }
     &__item_1 {
         background: #288BAA;
@@ -297,6 +300,10 @@ body {
 }
 
 @media (max-width: 992px) {
+
+    .header {
+        margin-bottom: 25px;
+    }
     
     .header {
         background-size: cover;
@@ -337,6 +344,12 @@ body {
             img {
                 height: 205px;
             }
+        }
+    }
+
+    .site:hover {
+        .site__hover {
+            display: none;
         }
     }
 }
@@ -416,10 +429,6 @@ body {
 
     .container {
         border-radius: 20px;
-    }
-
-    .header {
-        margin-bottom: 25px;
     }
 
     .header__title {

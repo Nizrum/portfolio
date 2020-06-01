@@ -84,6 +84,10 @@ body {
           justify-content: center;
 }
 
+.contacts__item:hover {
+  border: 2px solid #C161EE;
+}
+
 .contacts__item_1 {
   background: #288BAA;
 }
@@ -326,6 +330,9 @@ body {
 
 @media (max-width: 992px) {
   .header {
+    margin-bottom: 25px;
+  }
+  .header {
     background-size: cover;
     background-position: top center;
   }
@@ -356,6 +363,9 @@ body {
   }
   .site__image img {
     height: 205px;
+  }
+  .site:hover .site__hover {
+    display: none;
   }
 }
 
@@ -412,9 +422,6 @@ body {
 @media (max-width: 480px) {
   .container {
     border-radius: 20px;
-  }
-  .header {
-    margin-bottom: 25px;
   }
   .header__title {
     font-size: 24px;
