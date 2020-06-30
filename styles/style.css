@@ -42,6 +42,8 @@ body {
   line-height: 56px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contacts {
@@ -151,12 +153,17 @@ body {
   line-height: 56px;
   margin-bottom: 12px;
   text-align: center;
+  margin-top: 0;
 }
 
 .about__text {
   font-size: 36px;
   line-height: 48px;
   text-align: justify;
+}
+
+li::marker {
+  font-weight: bold;
 }
 
 .portfolio {
@@ -178,6 +185,7 @@ body {
   line-height: 56px;
   text-align: center;
   margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .site {
