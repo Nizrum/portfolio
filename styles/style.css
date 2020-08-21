@@ -33,12 +33,13 @@ body {
   background-size: 100% 100%;
   text-align: center;
   padding: 40px 25px;
+  padding-top: 30px;
   margin-bottom: 40px;
 }
 
 .header__title {
   font-weight: 400;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 56px;
   text-align: center;
   color: #FFFFFF;
@@ -149,7 +150,7 @@ body {
 }
 
 .about__title {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 56px;
   margin-bottom: 12px;
   text-align: center;
@@ -157,7 +158,7 @@ body {
 }
 
 .about__text {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 48px;
   text-align: justify;
 }
@@ -181,7 +182,7 @@ li::marker {
 }
 
 .portfolio__title {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 56px;
   text-align: center;
   margin-bottom: 25px;
@@ -189,55 +190,100 @@ li::marker {
 }
 
 .site {
-  width: 445px;
-  height: 315px;
+  width: 920px;
   margin: 0 auto;
-  background-color: #EAEAEA;
-  border-radius: 5px;
-  padding: 20px;
+  font-style: normal;
+  background-color: #eaeaea;
+  border-radius: 35px;
   overflow: hidden;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
 }
 
-.site__image {
-  border-radius: 5px;
-  overflow: hidden;
-  display: block;
-}
-
-.site__image img {
-  width: 100%;
-  height: 230px;
-  border-radius: 5px;
+.site__img {
+  width: 350px;
+  height: 235px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 12px;
 }
 
-.site__name {
+.site__text {
+  width: 400px;
+}
+
+.site__title {
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
-  margin-top: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-.site__hover {
-  height: 315px;
-  width: 445px;
-  font-size: 24px;
-  line-height: 30px;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: rgba(234, 234, 234, 0.95);
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+.site__props {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.site__property {
+  margin-bottom: 30px;
+}
+
+.site__description {
+  margin-bottom: 20px;
+}
+
+.site__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+
+.property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
-  color: #000;
+}
+
+.property__icon {
+  margin-right: 16px;
+}
+
+.property__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+.description__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+.description__text {
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .site:hover .site__hover {
@@ -248,7 +294,7 @@ li::marker {
 
 .swiper-container {
   margin: 0 auto;
-  height: 315px;
+  height: auto;
   width: 92%;
 }
 
