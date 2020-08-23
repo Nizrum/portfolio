@@ -141,7 +141,7 @@ li::marker {
     overflow: hidden;
     box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
     border-radius: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
     padding: 35px 20px;
     &__title {
@@ -265,7 +265,7 @@ li::marker {
 
 .swiper-button-next, .swiper-button-prev {
     position: static;
-    top: 150px !important;
+    top: 200px !important;
     outline: none;
 }
 
@@ -299,18 +299,15 @@ li::marker {
         width: 100%;
     }
     .site {
-        width: 400px;
-        min-height: 285px;
+        width: 800px;
 
-        &__image {
-            img {
-                height: 205px;
-            }
+        &__img {
+            width: 315px;
+            height: 210px;
         }
-        
-        &__hover {
-            width: 400px;
-            height: 285px;
+
+        &__text {
+            width: 350px;
         }
     }
 }
@@ -318,7 +315,7 @@ li::marker {
 @media (max-width: 1200px) {
     
     .slider-top {
-        width: 70%;
+        width: 75%;
     }
     
     .header {
@@ -342,7 +339,19 @@ li::marker {
     }
 
     .site {
-        height: auto;
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            width: 350px;
+            height: 235px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 350px !important;
     }
     
     .portfolio__title {
@@ -389,19 +398,7 @@ li::marker {
     
     .site {
         width: 400px;
-        min-height: 285px;
-
-        &__image {
-            img {
-                height: 205px;
-            }
-        }
-    }
-
-    .site:hover {
-        .site__hover {
-            display: none;
-        }
+        padding: 30px;
     }
 }
 
@@ -443,27 +440,27 @@ li::marker {
 
     .site {
         width: 360px;
-        min-height: 255px;
 
-        &__image {
-            img {
-                height: 185px;
-            }
+        &__img {
+            width: 315px;
+            height: 210px;
+        }
+
+        &__text {
+            width: 320px;
+        }
+
+        &__title {
+            font-size: 20px;
         }
     }
 
-    .site:hover {
-        .site__hover {
-            display: none;
-        }
-    }
-
-    .slider-top {
-        width: 85%;
+    .property__icon {
+        width: 25px;
+        margin-right: 12px;
     }
 
     .swiper-button-next, .swiper-button-prev {
-        top: 150px !important;
         img {
             opacity: 0.4;
         }
@@ -531,8 +528,7 @@ li::marker {
     }
 
     .portfolio {
-        padding: 20px 10px;
-        padding-bottom: 5px;
+        padding: 25px 10px;
         margin-bottom: 20px;
     }
     
@@ -541,21 +537,20 @@ li::marker {
     }
     
     .site {
-        width: 290px;
-        min-height: 205px;
+        width: 95%;
 
-        &__image {
-            img {
-                height: 145px;
-            }
+        &__img {
+            width: 100%;
+            height: auto;
         }
-        &__name {
-            font-size: 18px;
+
+        &__text {
+            width: 100%;
         }
     }
 
-    .swiper-container {
-        height: 285px;
+    .property {
+        flex-basis: 100%;
     }
 }
 
@@ -576,13 +571,6 @@ li::marker {
     }
 
     .site {
-        width: 235px;
-        min-height: 165px;
-
-        &__image {
-            img {
-                height: 115px;
-            }
-        }
+        padding: 20px;
     }
 }
