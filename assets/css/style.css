@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -57,21 +56,12 @@ strong {
   background-color: #fff;
   border: 5px solid #C161EE;
   overflow: hidden;
-  -webkit-box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   padding: 35px;
   margin-bottom: 40px;
 }
@@ -80,15 +70,9 @@ strong {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__item:hover {
@@ -116,12 +100,8 @@ strong {
 }
 
 .contacts__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 65%;
   margin: 0 auto;
 }
@@ -145,8 +125,7 @@ strong {
   background-color: #fff;
   border: 5px solid #C161EE;
   overflow: hidden;
-  -webkit-box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   margin-bottom: 40px;
   text-align: center;
@@ -177,8 +156,7 @@ li::marker {
   background-color: #fff;
   border: 5px solid #C161EE;
   overflow: hidden;
-  -webkit-box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   margin-bottom: 30px;
   text-align: center;
@@ -201,20 +179,15 @@ li::marker {
   border-radius: 35px;
   overflow: hidden;
   padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: left;
 }
 
 .site__img {
   width: 350px;
   height: 235px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -231,14 +204,9 @@ li::marker {
 }
 
 .site__props {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .site__property {
@@ -253,18 +221,13 @@ li::marker {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #000000;
 }
 
 .property {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .property__icon {
@@ -291,8 +254,6 @@ li::marker {
 }
 
 .site:hover .site__hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -321,8 +282,7 @@ li::marker {
 }
 
 .swiper-button-next img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (max-width: 1480px) {
@@ -379,13 +339,8 @@ li::marker {
   }
   .site {
     width: 450px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .site__img {
     width: 350px;
@@ -551,8 +506,7 @@ li::marker {
     width: 100%;
   }
   .property {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
